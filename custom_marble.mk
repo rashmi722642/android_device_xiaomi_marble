@@ -4,6 +4,9 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+# Force 64-bit only configuration at the highest priority
+$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit_only.mk)
+
 # Inherit from marble device
 $(call inherit-product, device/xiaomi/marble/device.mk)
 
