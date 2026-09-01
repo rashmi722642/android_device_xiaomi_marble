@@ -2,7 +2,8 @@
 # Copyright (C) 2022-2024 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
-#
+
+ZYGOTE_FORCE_64 := true
 
 # Force 64-bit only configuration at the highest priority
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit_only.mk)
